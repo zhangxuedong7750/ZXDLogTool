@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#include "ZXDLogManager.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [ZXDLogManager saveLog];
     return YES;
+}
+
+-(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+
+    if (event.type == UIEventSubtypeMotionShake) {
+        [ZXDLogManager startLog];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

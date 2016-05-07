@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZXDLogManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(log) userInfo:nil repeats:YES];
+}
+
+-(void)log{
+
+    NSLog(@"------zxd---====");
 }
 
 - (void)didReceiveMemoryWarning {

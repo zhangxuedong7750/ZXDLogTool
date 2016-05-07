@@ -13,6 +13,8 @@
 		E19FE5E61CDDE7790089EA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FE5E41CDDE7790089EA5B /* Main.storyboard */; };
 		E19FE5E81CDDE7790089EA5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19FE5E71CDDE7790089EA5B /* Assets.xcassets */; };
 		E19FE5EB1CDDE7790089EA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FE5E91CDDE7790089EA5B /* LaunchScreen.storyboard */; };
+		E19FE5F51CDDE7B00089EA5B /* ZXDLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FE5F41CDDE7B00089EA5B /* ZXDLogView.m */; };
+		E19FE5F81CDDE7C20089EA5B /* ZXDLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19FE5F71CDDE7C20089EA5B /* ZXDLogManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E19FE5E71CDDE7790089EA5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19FE5EA1CDDE7790089EA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E19FE5EC1CDDE7790089EA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19FE5F31CDDE7B00089EA5B /* ZXDLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDLogView.h; sourceTree = "<group>"; };
+		E19FE5F41CDDE7B00089EA5B /* ZXDLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDLogView.m; sourceTree = "<group>"; };
+		E19FE5F61CDDE7C20089EA5B /* ZXDLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDLogManager.h; sourceTree = "<group>"; };
+		E19FE5F71CDDE7C20089EA5B /* ZXDLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDLogManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		E19FE5DA1CDDE7790089EA5B /* ZXDLogTool */ = {
 			isa = PBXGroup;
 			children = (
+				E19FE5F21CDDE7920089EA5B /* LogTool */,
 				E19FE5DE1CDDE7790089EA5B /* AppDelegate.h */,
 				E19FE5DF1CDDE7790089EA5B /* AppDelegate.m */,
 				E19FE5E11CDDE7790089EA5B /* ViewController.h */,
@@ -77,6 +84,17 @@
 				E19FE5DC1CDDE7790089EA5B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E19FE5F21CDDE7920089EA5B /* LogTool */ = {
+			isa = PBXGroup;
+			children = (
+				E19FE5F31CDDE7B00089EA5B /* ZXDLogView.h */,
+				E19FE5F41CDDE7B00089EA5B /* ZXDLogView.m */,
+				E19FE5F61CDDE7C20089EA5B /* ZXDLogManager.h */,
+				E19FE5F71CDDE7C20089EA5B /* ZXDLogManager.m */,
+			);
+			name = LogTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19FE5F81CDDE7C20089EA5B /* ZXDLogManager.m in Sources */,
 				E19FE5E31CDDE7790089EA5B /* ViewController.m in Sources */,
 				E19FE5E01CDDE7790089EA5B /* AppDelegate.m in Sources */,
+				E19FE5F51CDDE7B00089EA5B /* ZXDLogView.m in Sources */,
 				E19FE5DD1CDDE7790089EA5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
